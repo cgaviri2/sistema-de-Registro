@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Estudiantes</title>
+  </head>
+  <body>
+    <h1>Formulario de Registro de Estudiantes</h1>
+    <form action="/submit" method="POST">
+      <label for="nombre">Nombre Completo:</label>
+      <input type="text" name="nombre" required />
+      <br /><br />
+
+      <label for="edad">Edad:</label>
+      <input type="number" name="edad" required />
+      <br /><br />
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" name="email" required />
+      <br /><br />
+
+      <label for="cursos">Curso:</label>
+      <select name="cursos" id="">
+        <option value="java">java</option>
+        <option value="react">react</option>
+        <option value="python">python</option>
+      </select>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
